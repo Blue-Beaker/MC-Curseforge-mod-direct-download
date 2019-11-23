@@ -1,0 +1,18 @@
+{
+	"request": [
+		{
+			"enable": true,
+			"name": "Curseforge",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://www\\.curseforge\\.com/minecraft/mc-mods/(.*)/download/(.*)",
+			"exclude": "^(.*)/file",
+			"group": "MC-Curseforge",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.curseforge.com/minecraft/mc-mods/$1/download/$2/file"
+		}
+	],
+	"sendHeader": [],
+	"receiveHeader": []
+}
